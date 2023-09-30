@@ -19,9 +19,45 @@ find_package(catkin REQUIRED COMPONENTS
   ${CATKIN_DEPENDENCIES}
   )
 
-# add_message_files(DIRECTORY msg/mrs_octomap_planner FILES
-#   MrsOctomapPlanner.msg
-#   )
+add_message_files(DIRECTORY msg/mrs_pcl_tools FILES
+  PclToolsDiagnostics.msg
+  )
+
+add_message_files(DIRECTORY msg/mrs_octomap_planner FILES
+  OctomapPlannerDiagnostics.msg
+  )
+
+add_message_files(DIRECTORY msg/mrs_serial FILES
+  BacaProtocol.msg
+  GimbalPRY.msg
+  GripperDiagnostics.msg
+  ParachuteDiagnostics.msg
+  SerialRaw.msg
+  TarotGimbalState.msg
+  )
+
+add_message_files(DIRECTORY msg/gnss FILES
+  Bestpos.msg
+  Bestvel.msg
+  Gpgga.msg
+  Gpgsa.msg
+  Gpgst.msg
+  Gpgsv.msg
+  Gprmc.msg
+  GpsData.msg
+  GPSFix.msg
+  GpsStatus.msg
+  Gpvtg.msg
+  RangeInformation.msg
+  Range.msg
+  RtkFixType.msg
+  RtkGps.msg
+  Satellite.msg
+  TersusMessageHeader.msg
+  Time.msg
+  TrackstatChannel.msg
+  Trackstat.msg
+  )
 
 # add_service_files(DIRECTORY srv/uav_managers FILES
 #   BumperParamsSrv.srv
