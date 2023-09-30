@@ -33,7 +33,6 @@ add_message_files(DIRECTORY msg/mrs_serial FILES
   GripperDiagnostics.msg
   ParachuteDiagnostics.msg
   SerialRaw.msg
-  TarotGimbalState.msg
   )
 
 add_message_files(DIRECTORY msg/gnss FILES
@@ -44,14 +43,11 @@ add_message_files(DIRECTORY msg/gnss FILES
   Gpgst.msg
   Gpgsv.msg
   Gprmc.msg
-  GpsData.msg
   GPSFix.msg
   GpsStatus.msg
   Gpvtg.msg
   RangeInformation.msg
   Range.msg
-  RtkFixType.msg
-  RtkGps.msg
   Satellite.msg
   TersusMessageHeader.msg
   Time.msg
