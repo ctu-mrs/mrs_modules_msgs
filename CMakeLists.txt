@@ -55,11 +55,16 @@ add_message_files(DIRECTORY msg/gnss FILES
   Trackstat.msg
   )
 
-# add_service_files(DIRECTORY srv/uav_managers FILES
-#   BumperParamsSrv.srv
-#   )
+add_message_files(DIRECTORY msg/llcp FILES
+  Llcp.msg
+  )
 
-## Generate added messages and services with any dependencies listed here
+add_service_files(DIRECTORY srv/llcp FILES
+
+  SetServo.srv
+  SetTrigger.srv
+  )
+
 generate_messages(DEPENDENCIES
 
   std_msgs
@@ -109,7 +114,7 @@ install(TARGETS ${LIBRARIES}
   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
   )
 
-install(DIRECTORY msg
+install(DIRECTORY msg srv
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   )
 
