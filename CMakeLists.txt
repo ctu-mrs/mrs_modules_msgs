@@ -20,7 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
   )
 
 add_message_files(DIRECTORY msg/sensors FILES
-  AvailableSensors.msg
+  SensorInfo.msg
   )
 
 add_message_files(DIRECTORY msg/mrs_pcl_tools FILES
