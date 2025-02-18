@@ -3,10 +3,10 @@
 # For Tersus see section 3.1.3 BESTPOS in https://www.tersus-gnss.com/assets/upload/file/20180608173259349.pdf
 # --------------------------------------------------------------------------------------
 
-Header header
+std_msgs/Header header
 
 # message 42
-TersusMessageHeader tersus_msg_header
+mrs_modules_msgs/TersusMessageHeader tersus_msg_header
 
 string solution_status
 string position_type
