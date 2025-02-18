@@ -1,4 +1,4 @@
-time   stamp
+builtin_interfaces/Time   stamp
 string sensor_name
 uint8  sensor_type
 

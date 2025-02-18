@@ -62,16 +62,12 @@ MY_PATH=`dirname "$0"`
 MY_PATH=`( cd "$MY_PATH" && pwd )`
 cd "$MY_PATH"
 
-ROS1_MSGS_LOCATION="$HOME/work/ros2_dev/mrs_modules_msgs"
-
 # postproess message files
 
 log yellow "Postprocessing msg files to correct format"
-process_msg_files $MY_PATH/msg msg
+process_files $MY_PATH/msg msg
 log yellow "Postprocessing srv files to correct format"
-process_msg_files $MY_PATH/srv srv
-
-exit 0
+process_files $MY_PATH/srv srv
 
 # print sections for CMakeLists.txt
 
@@ -85,7 +81,7 @@ echo "# This file is generated, do NOT modify it by hand" >> $OUT_FILE
 echo "
 set(msg_files" >> $OUT_FILE
 for file in $FILE_LIST; do
-  echo "  ${file#*"mrs_msgs/"}" >> $OUT_FILE
+  echo "  ${file#*"mrs_modules_msgs/"}" >> $OUT_FILE
 done
 echo ")" >> $OUT_FILE
 
@@ -98,7 +94,7 @@ echo "# This file is generated, do NOT modify it by hand" >> $OUT_FILE
 echo "
 set(srv_files" >> $OUT_FILE
 for file in $FILE_LIST; do
-  echo "  ${file#*"mrs_msgs/"}" >> $OUT_FILE
+  echo "  ${file#*"mrs_modules_msgs/"}" >> $OUT_FILE
 done
 echo ")" >> $OUT_FILE
 

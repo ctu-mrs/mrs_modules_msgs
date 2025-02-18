@@ -1,5 +1,5 @@
 # Message from GPGGA NMEA String
-Header header
+std_msgs/Header header
 
 string message_id
 
@@ -15,7 +15,7 @@ string longitude_dir
 GpsStatus gps_quality
 
 uint32 num_sats
-float32 hdop 
+float32 hdop
 float32 altitude
 string altitude_units
 

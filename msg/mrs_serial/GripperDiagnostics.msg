@@ -1,4 +1,4 @@
-time stamp
+builtin_interfaces/Time stamp
 
 bool gripper_on
 bool gripping_object

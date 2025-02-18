@@ -1,9 +1,9 @@
 # A more complete GPS fix to supplement sensor_msgs/NavSatFix.
 # modified version of http://docs.ros.org/kinetic/api/gps_common/html/msg/GPSFix.html
-Header header
+std_msgs/Header header
 
 # Satellites used in solution
-uint8 num_satellites_used_in_solution # Number of satellites
+uint8 num_satellites_used_in_solution # number of satellites
 
 # Satellites visible
 uint8 num_satellites_tracked

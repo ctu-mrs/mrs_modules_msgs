@@ -1,5 +1,5 @@
 # Message from GPRMC NMEA String
-Header header
+std_msgs/Header header
 
 string message_id
 
@@ -19,8 +19,8 @@ float32 mag_var
 string mag_var_direction
 
 string mode_indicator
-string MODE_INDICATIOR_AUTONOMOUS=A
-string MODE_INDICATIOR_DIFFERENTIAL=D
-string MODE_INDICATIOR_ESTIMATED=E
-string MODE_INDICATIOR_MANUAL=M
-string MODE_INDICATIOR_DATA_NOT_VALID=N
+string MODE_INDICATIOR_AUTONOMOUS=a
+string MODE_INDICATIOR_DIFFERENTIAL=d
+string MODE_INDICATIOR_ESTIMATED=e
+string MODE_INDICATIOR_MANUAL=m
+string MODE_INDICATIOR_DATA_NOT_VALID=n

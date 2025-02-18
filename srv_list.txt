@@ -1,0 +1,6 @@
+# This file is generated, do NOT modify it by hand
+
+set(srv_files
+  srv/llcp/SetServo.srv
+  srv/llcp/SetTrigger.srv
+)

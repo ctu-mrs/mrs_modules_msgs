@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Get the list of all active topics with their types
-msg_types=$(ros2 interface package mrs_msgs -m)
+msg_types=$(ros2 interface package mrs_modules_msgs -m)
 count=0
-msg_count=$(echo $msg_types | grep -o "\bmrs_msgs\b" | wc -l)
+msg_count=$(echo $msg_types | grep -o "\bmrs_modules_msgs\b" | wc -l)
 
 # Loop through each topic and its type
 while read -r line; do

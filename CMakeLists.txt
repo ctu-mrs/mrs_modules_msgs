@@ -23,6 +23,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     DEPENDENCIES builtin_interfaces geometry_msgs std_msgs sensor_msgs std_srvs
   )
 
+# TODO: Remove this section if ROS2 installs the msgs under correct namespaces
 # add_custom_command(TARGET MrsModulesMsgs_Main
 #   PRE_BUILD
 #   WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"

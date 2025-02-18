@@ -11,24 +11,24 @@ mrs_modules_msgs/TersusMessageHeader tersus_msg_header
 string solution_status
 string position_type
 
-float64 latitude  # (degrees) 
-float64 longitude # (degrees) 
-float64 height    # Height above mean sea level (meters)
+float64 latitude  # (degrees)
+float64 longitude # (degrees)
+float64 height    # height above mean sea level (meters)
 
-float32 undulation  # Undulation - the relationship between the geoid and the ellipsoid (m) of the chosen datum
+float32 undulation  # undulation - the relationship between the geoid and the ellipsoid (m) of the chosen datum
 string datum_id
 
-float32 latitude_std  # Latitude standard deviation (m) 
-float32 longitude_std # Longitude standard deviation (m) 
-float32 height_std    # Height standard deviation (m) 
+float32 latitude_std  # latitude standard deviation (m)
+float32 longitude_std # longitude standard deviation (m)
+float32 height_std    # height standard deviation (m)
 
-string base_station_id   # Base station ID
+string base_station_id   # base station id
 
-float32 diff_age      # Differential age in seconds
-float32 solution_age  # Solution age in seconds
+float32 diff_age      # differential age in seconds
+float32 solution_age  # solution age in seconds
 
-uint8 num_satellites_tracked                          # Number of satellites tracked
-uint8 num_satellites_used_in_solution                 # Number of satellites used in solution 
-uint8 num_gps_and_glonass_l1_used_in_solution         # Number of satellites with L1/E1/B1 signals used in solution
-uint8 num_gps_and_glonass_l1_and_l2_used_in_solution  # Number of satellites with multi-frequency signals used in solution
+uint8 num_satellites_tracked                          # number of satellites tracked
+uint8 num_satellites_used_in_solution                 # number of satellites used in solution
+uint8 num_gps_and_glonass_l1_used_in_solution         # number of satellites with l1/e1/b1 signals used in solution
+uint8 num_gps_and_glonass_l1_and_l2_used_in_solution  # number of satellites with multi-frequency signals used in solution
 # TODO: define the rest of the message if it is necessary

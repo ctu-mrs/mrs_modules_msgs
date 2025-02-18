@@ -1,7 +1,7 @@
 # See section 3.1.4 BESTVEL in https://www.tersus-gnss.com/assets/upload/file/20180608173259349.pdf
 # --------------------------------------------------------------------------------------
 
-Header header
+std_msgs/Header header
 
 # message 99
 TersusMessageHeader tersus_msg_header

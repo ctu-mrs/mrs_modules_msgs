@@ -1,5 +1,5 @@
 # Parsed Best Position or HP pos data from Tersus receiver
-Header header
+std_msgs/Header header
 
 # Clock model status
 string clock_status

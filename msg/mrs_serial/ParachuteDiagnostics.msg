@@ -1,4 +1,4 @@
-time stamp
+builtin_interfaces/Time stamp
 
 bool alive
 bool armed
