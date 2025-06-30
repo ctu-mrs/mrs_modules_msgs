@@ -23,25 +23,4 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     DEPENDENCIES builtin_interfaces geometry_msgs std_msgs sensor_msgs std_srvs
   )
 
-# TODO: Remove this section if ROS2 installs the msgs under correct namespaces
-# add_custom_command(TARGET MrsModulesMsgs_Main
-#   PRE_BUILD
-#   WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
-#   COMMAND bash -c "${CMAKE_CURRENT_SOURCE_DIR}/link_msg_files.sh"
-#   )
-
-## --------------------------------------------------------------
-## |                           Install                          |
-## --------------------------------------------------------------
-
-# install(TARGETS ${PROJECT_NAME}
-#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
-#   )
-
-# install(DIRECTORY msg srv
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-#   )
-
 ament_package()
