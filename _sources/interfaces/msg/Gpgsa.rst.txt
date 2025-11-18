@@ -1,0 +1,8 @@
+Gpgsa
+=====
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../msg/Gpgsa.msg
+

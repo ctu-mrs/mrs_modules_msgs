@@ -1,0 +1,8 @@
+ParachuteDiagnostics
+====================
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../msg/ParachuteDiagnostics.msg
+

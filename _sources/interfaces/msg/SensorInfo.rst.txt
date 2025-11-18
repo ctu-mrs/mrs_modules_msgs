@@ -1,0 +1,8 @@
+SensorInfo
+==========
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../msg/SensorInfo.msg
+

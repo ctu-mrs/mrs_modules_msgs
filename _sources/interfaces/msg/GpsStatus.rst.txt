@@ -1,0 +1,8 @@
+GpsStatus
+=========
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../msg/GpsStatus.msg
+

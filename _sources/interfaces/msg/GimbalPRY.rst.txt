@@ -1,0 +1,8 @@
+GimbalPRY
+=========
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../msg/GimbalPRY.msg
+

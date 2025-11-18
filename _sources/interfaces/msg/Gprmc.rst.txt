@@ -1,0 +1,8 @@
+Gprmc
+=====
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../msg/Gprmc.msg
+
